@@ -1,4 +1,4 @@
-import libtidy.platform;
+module libtidy.platform;
 
 public:
 

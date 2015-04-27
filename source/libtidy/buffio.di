@@ -18,8 +18,8 @@ public:
 
 */
 
-import platform;
-import tidy;
+import libtidy.platform;
+import libtidy.tidy;
 
 extern(C):
 

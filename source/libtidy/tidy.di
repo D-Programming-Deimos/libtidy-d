@@ -70,8 +70,10 @@ public:
 
 */
 
-import platform;
-import tidyenum;
+import libtidy.platform;
+import libtidy.tidyenum;
+import libtidy.buffio : TidyBuffer;
+import core.sys.posix.stdio : FILE;
 
 extern(C):
 
@@ -107,8 +109,6 @@ struct _TidyAttr {}
 alias TidyAttr = _TidyAttr*;
 
 /** @} end Opaque group */
-
-import buffio : TidyBuffer;
 
 /** @defgroup Memory  Memory Allocation
 **
@@ -620,7 +620,6 @@ alias TidyReportFilter = Bool function(TidyDoc tdoc, TidyReportLevel lvl,
 Bool     tidySetReportFilter(TidyDoc tdoc,
                                                   TidyReportFilter filtCallback );
 
-import core.sys.posix.stdio : FILE;
 /** Set error sink to named file */
 FILE*    tidySetErrorFile(TidyDoc tdoc, ctmbstr errfilnam );
 /** Set error sink to given buffer */

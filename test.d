@@ -1,6 +1,6 @@
-import tidy;
-import buffio;
-import tidyenum;
+import libtidy.tidy;
+import libtidy.buffio;
+import libtidy.tidyenum;
 import std.c.stdio;
 
 int main(string[] args)
