@@ -1,0 +1,11 @@
+{
+	"name": "libtidy-d",
+	"description": "D bindings to libtidy.",
+	"homepage": "http://tidy.sourceforge.net/",
+	"license": "Boost",
+	"authors": [
+		"Lionello Lunesu",
+	],
+	"targetType": "sourceLibrary",
+	"libs": ["png"]
+}
